@@ -40,7 +40,6 @@ from .base import (
     BetEvent,
     RoundResult,
     Table,
-    TableError,
     TableLimitError,
     UnknownBetError,
 )
@@ -88,7 +87,12 @@ class CrapsRollResult(RoundResult):
 
 
 class CrapsTable(Table):
-    """A craps table. ``rng`` must expose ``integers(low, high)`` (numpy)."""
+    """A craps table.
+
+    Pass ``seed`` for a per-table ``random.Random`` dice source (a session
+    is then fully determined by its seed). ``rng`` is the legacy hook for a
+    numpy-style Generator exposing ``.integers(low, high)``.
+    """
 
     def __init__(
         self,
@@ -96,9 +100,10 @@ class CrapsTable(Table):
         min_bet: float = 5.0,
         max_bet: float = 5000.0,
         odds_multiple: int = 5,
+        seed: Optional[int] = None,
         rng=None,
     ) -> None:
-        super().__init__(bankroll=bankroll, rng=rng)
+        super().__init__(bankroll=bankroll, seed=seed, rng=rng)
         self.min_bet = float(min_bet)
         self.max_bet = float(max_bet)
         self.odds_multiple = int(odds_multiple)
@@ -232,9 +237,7 @@ class CrapsTable(Table):
     def roll(self, d1: Optional[int] = None, d2: Optional[int] = None) -> CrapsRollResult:
         """Roll the dice (random unless ``d1``/``d2`` given) and settle bets."""
         if d1 is None or d2 is None:
-            if self.rng is None:
-                raise TableError("no dice given and no rng configured")  # noqa: F821
-            d1, d2 = int(self.rng.integers(1, 7)), int(self.rng.integers(1, 7))
+            d1, d2 = self._die(), self._die()
         total = d1 + d2
         self.last_roll = (d1, d2)
         self.roll_count += 1

@@ -37,6 +37,10 @@ keep the current codebase from drifting away from it.
   builder for non-coders can sit on top of the same API later.
 - **The desktop Python app remains** as the power-user lab and reference
   implementation. It is not throwaway.
+- **Watch mode is the shared playback format.** The engine's per-roll event
+  stream (`watch_session`, schema in `docs/watch-mode.md`) is the
+  cross-platform contract: the mobile table renders these JSON events, and
+  the TypeScript port must reproduce the schema exactly.
 
 ## Interactive table & animations
 

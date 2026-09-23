@@ -18,6 +18,17 @@ pip install -e ".[dev]"
 portroyale run --game craps --strategy passline_odds \
     --bankroll 1000 --rolls 10000 --sessions 500
 
+# Reproducible run: master seed 7, stop at -50% / +100%
+portroyale run --strategy passline_odds --seed 7 \
+    --stop-loss 0.5 --stop-win 2.0 --sessions 200 --rolls 5000
+
+# Watch ONE session play out roll by roll (same seed = same session)
+portroyale watch --strategy passline_odds --seed 42 --rolls 300
+
+# A/B strategies on IDENTICAL dice (common random numbers)
+portroyale compare --strategies passline_odds,ironcross,dontpass_odds \
+    --bankroll 1000 --rolls 5000 --sessions 100 --seed 7
+
 # See every strategy and its tunable parameters
 portroyale strategies
 
@@ -25,7 +36,8 @@ portroyale strategies
 portroyale run --strategy ironcross --param base_unit=15 --param place_unit=18 \
     --bankroll 1000 --rolls 5000 --sessions 200
 
-# Interactive lab with charts
+# Interactive lab with charts (Simulate tab) and roll-by-roll
+# session playback (Watch tab)
 streamlit run app.py
 ```
 
@@ -104,29 +116,75 @@ Bet kinds: `pass`, `dontpass`, `come`, `dontcome`, `place`, `buy`, `lay`,
 `hard`, `field`, `any_seven`, `any_craps`, `two_twelve`, `three_eleven`
 (odds are added via `add_odds`, never placed directly).
 
+## Seeds & replay
+
+Every session is fully determined by its seed. `--seed N` on `run` sets a
+*master* seed; session `i` plays the dice stream drawn from
+`random.Random(N + i)`. Re-running with the same seed reproduces the run
+exactly — same statistics, same sessions. The table engine itself takes a
+`seed` too (`CrapsTable(seed=...)`), so dice always come from a per-table
+`random.Random` instance.
+
+## Watch mode
+
+`portroyale watch` (or `streamlit run app.py` → **Watch** tab) plays a
+single session and streams JSON-serializable events — `session_start`,
+`bet_placed`, `bet_resolved`, `roll`, `bankroll`, `session_end` — one per
+roll. Same seed always replays the identical session. This stream is the
+cross-platform contract the future mobile table will render; the schema
+is documented in `docs/watch-mode.md`.
+
+## Comparing strategies (common random numbers)
+
+`portroyale compare` runs several strategies against the **identical**
+dice: each session's dice are generated once from the seed and replayed
+for every strategy. Shared randomness cancels out most of the luck, so
+differences in the results are differences in the strategies, not the
+dice. (A seed is required — without shared dice a comparison would just
+measure noise.) Output is a side-by-side table: realized edge, win rate,
+ruin rate, drawdown, median/p5/p95 final bankroll, and the session-end
+breakdown per strategy.
+
+## Stop-loss / stop-win
+
+Sessions can end early: `--stop-loss 0.5` stops a session at ≤50% of the
+starting bankroll, `--stop-win 2.0` at ≥200%. Reports show what fraction
+of sessions ended by each reason (`rolls_exhausted`, `ruin`,
+`stop_loss`, `stop_win`).
+
 ## Project layout
 
 ```
 app.py                          Streamlit strategy lab (charts + forms)
+docs/
+    mobile-roadmap.md           iOS/Android target architecture + guardrails
+    watch-mode.md               watch-mode event schema (cross-platform contract)
 src/portroyale/
     games/base.py               Table/Bet/BetEvent primitives shared by all games
     games/craps.py              Rule-correct craps engine (true-odds payouts,
                                 bar-12, hardways, come-bet travel, table limits)
     strategies/base.py          Strategy framework (decide/table API)
     strategies/craps.py         passline_odds, dontpass_odds, ironcross, presser
-    sim.py                      Monte Carlo engine (parallel sessions, stats)
-    cli.py                      `portroyale run` / `portroyale strategies`
-tests/                          38 pytest tests incl. exact-payout rule tests
+    sim.py                      Monte Carlo engine: run_simulation, watch_session
+                                (per-roll event stream), run_comparison
+                                (common-random-numbers A/B), stop controls
+    cli.py                      `portroyale run` / `watch` / `compare` / `strategies`
+tests/                          61 pytest tests incl. exact-payout rule tests,
+                                determinism (same seed -> identical streams),
+                                compare-mode dice fairness, stop triggers,
+                                and JSON-serializability of every event
 ```
 
 ## How the simulation works
 
 One **session** = start with a bankroll, loop `decide → roll` for N rolls
-(or until the bankroll can't cover the table minimum — that's a ruin).
-`run_simulation` repeats this for M sessions across all CPU cores and
+(or until the bankroll can't cover the table minimum — that's a ruin — or a
+stop-loss/stop-win level is hit). `run_simulation` repeats this for M
+sessions across all CPU cores and
 reports: realized house edge (−profit ÷ total wagered), session win rate,
-risk of ruin, max drawdown, final-bankroll percentiles, and percentile
-bands of bankroll over time.
+risk of ruin, max drawdown, final-bankroll percentiles, percentile
+bands of bankroll over time, and the fraction of sessions ended by each
+reason (rolls exhausted / ruin / stop-loss / stop-win).
 
 ## Adding a new game
 
@@ -140,9 +198,11 @@ bands of bankroll over time.
 ## Testing
 
 ```bash
-pytest            # 38 tests: come-out naturals/craps, point play, true-odds
+pytest            # 61 tests: come-out naturals/craps, point play, true-odds
                   # payouts per number, bar-12, place/buy/field/hardway math,
-                  # come-bet travel, table limits, and sim smoke tests
+                  # come-bet travel, table limits, sim smoke tests,
+                  # seed determinism, watch-stream schema + JSON checks,
+                  # compare-mode dice fairness, stop-loss/stop-win triggers
 ```
 
 ## Roadmap

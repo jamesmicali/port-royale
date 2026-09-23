@@ -12,6 +12,7 @@ any game without knowing its rules:
 """
 from __future__ import annotations
 
+import random
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from typing import Any, Optional
@@ -72,15 +73,38 @@ class Table(ABC):
     bet-placement helpers that make sense for them. The engine tracks
     ``bankroll``, ``total_wagered`` (every dollar ever put at risk — the
     denominator for realized house edge) and a queue of :class:`BetEvent`.
+
+    Randomness: pass ``seed`` and every die comes from a per-table
+    :class:`random.Random` instance, so a session is fully determined by its
+    seed (this is what makes sessions replayable — see ``watch_session``).
+    The legacy ``rng`` hook (a numpy-style Generator exposing
+    ``.integers``) still works when ``seed`` is not given.
     """
 
-    def __init__(self, bankroll: float = 1000.0, rng: Any = None) -> None:
+    def __init__(
+        self,
+        bankroll: float = 1000.0,
+        seed: Optional[int] = None,
+        rng: Any = None,
+    ) -> None:
         self.bankroll: float = float(bankroll)
         self.starting_bankroll: float = float(bankroll)
         self.bets: list[Bet] = []
         self.total_wagered: float = 0.0
         self._events: list[BetEvent] = []
-        self.rng = rng
+        self.seed: Optional[int] = seed
+        if seed is not None:
+            self.rng: Any = random.Random(seed)
+        elif rng is not None:
+            self.rng = rng
+        else:
+            self.rng = random.Random()
+
+    def _die(self) -> int:
+        """Draw one die (1-6) from the table's RNG."""
+        if isinstance(self.rng, random.Random):
+            return self.rng.randint(1, 6)
+        return int(self.rng.integers(1, 7))  # numpy-style legacy hook
 
     # -- helpers shared by every game ------------------------------------
     def find_bet(self, kind: str, number: Optional[int] = None) -> Optional[Bet]:
