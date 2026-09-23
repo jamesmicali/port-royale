@@ -147,6 +147,10 @@ pytest            # 38 tests: come-out naturals/craps, point play, true-odds
 
 ## Roadmap
 
+- **Mobile apps (iOS + Android):** target is a React Native + TypeScript app;
+  the Python engine is the reference spec. See `docs/mobile-roadmap.md` for the
+  target architecture and guardrails. Until the port starts: keep the engine
+  UI-free, no Python-only strategy features, limit Streamlit investment.
 - Blackjack engine (basic-strategy + counting strategies)
 - Roulette engine
 - Strategy comparison mode (A/B multiple strategies in one run)
