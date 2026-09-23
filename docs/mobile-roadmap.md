@@ -38,6 +38,29 @@ keep the current codebase from drifting away from it.
 - **The desktop Python app remains** as the power-user lab and reference
   implementation. It is not throwaway.
 
+## Interactive table & animations
+
+The "playable craps table" vision — not just simulations, but a visual game
+with rolling dice and moving chips — fits this stack well:
+
+- **React Native Reanimated** for all motion: dice tumbles, chips sliding to
+  betting spots, win highlights, losing bets getting swept. Animations run on
+  the UI thread at 60/120fps, independent of the JS thread — so a Monte Carlo
+  sim can crunch in the background without dropping frames.
+- **React Native Skia** for custom canvas rendering: table felt, betting
+  layout, chip stacks, dice faces. Full draw control beats composing a craps
+  table from stock components.
+- **Gesture Handler** for touch: drag chips onto the layout, tap to
+  place/remove bets.
+- Dice animation: choreographed tumbling (springs/keyframes) tends to look
+  better than real rigid-body physics; Lottie is an option for pre-baked
+  sequences.
+
+Architecture note: the interactive table and the simulator share the same
+rules core. The table UI is just a visual player making `place_bet` / `roll`
+calls against the engine — so every animation stays honest to the real odds,
+and strategies can be watched playing themselves out bet by bet.
+
 ## What ports vs. what gets replaced
 
 | Layer | Mobile fate |
