@@ -1,7 +1,9 @@
 """Rule-correctness tests for the craps engine.
 
 Every test drives the table with *fixed dice* (``table.roll(d1, d2)``) so
-the assertions are exact, not statistical.
+the assertions are exact, not statistical — except the final section, which
+holds one seeded-RNG statistical sanity check against the analytic 244/495
+flat pass-line win rate.
 """
 import pytest
 
@@ -251,3 +253,29 @@ def test_come_bet_wins_on_seven_while_in_transit():
     assert ("pass", "lost") in outcomes
     assert ("come", "won") in outcomes
     assert t.bankroll == pytest.approx(1000.0)  # -10 pass, +20 come
+
+
+# ------------------------------------------------- seeded statistical checks
+def test_flat_pass_line_matches_exact_probability():
+    """Analytic result: come-out naturals win 8/36; point wins sum to
+    2*(1/36 + 8/180 + 25/396); total = 976/1980 = 244/495 ~= 0.49292929.
+
+    Seeded RNG keeps this deterministic; the tolerance is wide enough that a
+    correct engine essentially never flakes at 200k decisions.
+    """
+    EXPECTED = 244 / 495
+    DECISIONS = 200_000
+    table = CrapsTable(bankroll=10_000_000.0, min_bet=5.0, seed=42)
+    wins = 0
+    for _ in range(DECISIONS):
+        table.place_bet("pass", 10.0)
+        while True:
+            result = table.roll()
+            resolved = [e for e in result.events
+                        if e.kind == "pass" and e.outcome in ("won", "lost")]
+            if resolved:
+                if resolved[0].outcome == "won":
+                    wins += 1
+                break
+    rate = wins / DECISIONS
+    assert abs(rate - EXPECTED) < 0.006, f"pass-line win rate {rate:.6f} != {EXPECTED:.6f}"

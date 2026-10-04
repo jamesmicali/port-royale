@@ -1,0 +1,6398 @@
+{
+  "name": "stop_win",
+  "generated_by": "tests/crosslang/generate_fixtures.py",
+  "config": {
+    "game": "craps",
+    "strategy": "passline_odds",
+    "strategyParams": {},
+    "bankroll": 1000.0,
+    "minBet": 5.0,
+    "maxBet": 5000.0,
+    "oddsMultiple": 5,
+    "rolls": 500,
+    "seed": 21,
+    "stopLoss": null,
+    "stopWin": 1.5
+  },
+  "dice": [
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      6,
+      3
+    ]
+  ],
+  "events": [
+    {
+      "type": "session_start",
+      "game": "craps",
+      "strategy": "passline_odds",
+      "strategy_params": {},
+      "seed": 21,
+      "bankroll": 1000.0,
+      "rolls": 500,
+      "stop_loss": null,
+      "stop_win": 1.5,
+      "min_bet": 5.0,
+      "max_bet": 5000.0,
+      "odds_multiple": 5
+    },
+    {
+      "type": "bet_placed",
+      "roll": 1,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 1,
+      "d1": 4,
+      "d2": 4,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 1,
+      "bankroll": 990.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 2,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 2,
+      "d1": 1,
+      "d2": 3,
+      "total": 4,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 2,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 3,
+      "d1": 5,
+      "d2": 4,
+      "total": 9,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 3,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 4,
+      "d1": 4,
+      "d2": 3,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 4,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 4,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 4,
+      "bankroll": 940.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 5,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 5,
+      "d1": 4,
+      "d2": 3,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 5,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 5,
+      "bankroll": 950.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 6,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 6,
+      "d1": 5,
+      "d2": 2,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 6,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 6,
+      "bankroll": 960.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 7,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 7,
+      "d1": 5,
+      "d2": 2,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 7,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 7,
+      "bankroll": 970.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 8,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 8,
+      "d1": 3,
+      "d2": 2,
+      "total": 5,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 8,
+      "bankroll": 960.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 9,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 5
+    },
+    {
+      "type": "roll",
+      "roll": 9,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 9,
+      "bankroll": 910.0
+    },
+    {
+      "type": "roll",
+      "roll": 10,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 10,
+      "bankroll": 910.0
+    },
+    {
+      "type": "roll",
+      "roll": 11,
+      "d1": 6,
+      "d2": 5,
+      "total": 11,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 11,
+      "bankroll": 910.0
+    },
+    {
+      "type": "roll",
+      "roll": 12,
+      "d1": 2,
+      "d2": 3,
+      "total": 5,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 12,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 12,
+      "kind": "pass_odds",
+      "number": 5,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 12,
+      "bankroll": 1055.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 13,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 13,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 13,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 13,
+      "bankroll": 1065.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 14,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 14,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 14,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 14,
+      "bankroll": 1075.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 15,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 15,
+      "d1": 3,
+      "d2": 4,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 15,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 15,
+      "bankroll": 1085.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 16,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 16,
+      "d1": 5,
+      "d2": 1,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 16,
+      "bankroll": 1075.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 17,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 17,
+      "d1": 3,
+      "d2": 4,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 17,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 17,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 17,
+      "bankroll": 1025.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 18,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 18,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 18,
+      "bankroll": 1015.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 19,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 19,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 19,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 19,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 19,
+      "bankroll": 1095.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 20,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 20,
+      "d1": 5,
+      "d2": 4,
+      "total": 9,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 20,
+      "bankroll": 1085.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 21,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 9
+    },
+    {
+      "type": "roll",
+      "roll": 21,
+      "d1": 4,
+      "d2": 5,
+      "total": 9,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 21,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 21,
+      "kind": "pass_odds",
+      "number": 9,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 21,
+      "bankroll": 1180.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 22,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 22,
+      "d1": 3,
+      "d2": 1,
+      "total": 4,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 22,
+      "bankroll": 1170.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 23,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 4
+    },
+    {
+      "type": "roll",
+      "roll": 23,
+      "d1": 5,
+      "d2": 1,
+      "total": 6,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 23,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "roll",
+      "roll": 24,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 24,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 24,
+      "kind": "pass_odds",
+      "number": 4,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 24,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 25,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 25,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 25,
+      "bankroll": 1110.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 26,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 26,
+      "d1": 6,
+      "d2": 6,
+      "total": 12,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 26,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "roll",
+      "roll": 27,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 27,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "roll",
+      "roll": 28,
+      "d1": 4,
+      "d2": 3,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 28,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 28,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 28,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 29,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 29,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 29,
+      "bankroll": 1050.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 30,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 30,
+      "d1": 3,
+      "d2": 6,
+      "total": 9,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 30,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "roll",
+      "roll": 31,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 31,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "roll",
+      "roll": 32,
+      "d1": 5,
+      "d2": 2,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 32,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 32,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 32,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 33,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 33,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 33,
+      "bankroll": 990.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 34,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 4
+    },
+    {
+      "type": "roll",
+      "roll": 34,
+      "d1": 5,
+      "d2": 4,
+      "total": 9,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 34,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 35,
+      "d1": 1,
+      "d2": 1,
+      "total": 2,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 35,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 36,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 36,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 37,
+      "d1": 4,
+      "d2": 1,
+      "total": 5,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 37,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 38,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 38,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 39,
+      "d1": 3,
+      "d2": 6,
+      "total": 9,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 39,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 40,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 40,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 41,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 41,
+      "bankroll": 940.0
+    },
+    {
+      "type": "roll",
+      "roll": 42,
+      "d1": 2,
+      "d2": 5,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 42,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 42,
+      "kind": "pass_odds",
+      "number": 4,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 42,
+      "bankroll": 940.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 43,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 43,
+      "d1": 5,
+      "d2": 5,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 43,
+      "bankroll": 930.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 44,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 44,
+      "d1": 3,
+      "d2": 4,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 44,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 44,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 44,
+      "bankroll": 880.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 45,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 45,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 45,
+      "bankroll": 870.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 46,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 46,
+      "d1": 4,
+      "d2": 3,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 46,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 46,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 46,
+      "bankroll": 820.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 47,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 47,
+      "d1": 5,
+      "d2": 2,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 47,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 47,
+      "bankroll": 830.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 48,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 48,
+      "d1": 3,
+      "d2": 2,
+      "total": 5,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 48,
+      "bankroll": 820.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 49,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 5
+    },
+    {
+      "type": "roll",
+      "roll": 49,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 49,
+      "bankroll": 770.0
+    },
+    {
+      "type": "roll",
+      "roll": 50,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 50,
+      "bankroll": 770.0
+    },
+    {
+      "type": "roll",
+      "roll": 51,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 51,
+      "bankroll": 770.0
+    },
+    {
+      "type": "roll",
+      "roll": 52,
+      "d1": 4,
+      "d2": 1,
+      "total": 5,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 52,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 52,
+      "kind": "pass_odds",
+      "number": 5,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 52,
+      "bankroll": 915.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 53,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 53,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 53,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 53,
+      "bankroll": 925.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 54,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 54,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 54,
+      "bankroll": 915.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 55,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 4
+    },
+    {
+      "type": "roll",
+      "roll": 55,
+      "d1": 1,
+      "d2": 1,
+      "total": 2,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 55,
+      "bankroll": 865.0
+    },
+    {
+      "type": "roll",
+      "roll": 56,
+      "d1": 6,
+      "d2": 5,
+      "total": 11,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 56,
+      "bankroll": 865.0
+    },
+    {
+      "type": "roll",
+      "roll": 57,
+      "d1": 6,
+      "d2": 4,
+      "total": 10,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 57,
+      "bankroll": 865.0
+    },
+    {
+      "type": "roll",
+      "roll": 58,
+      "d1": 6,
+      "d2": 5,
+      "total": 11,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 58,
+      "bankroll": 865.0
+    },
+    {
+      "type": "roll",
+      "roll": 59,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 59,
+      "bankroll": 865.0
+    },
+    {
+      "type": "roll",
+      "roll": 60,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 60,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 60,
+      "kind": "pass_odds",
+      "number": 4,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 100.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 60,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 61,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 61,
+      "d1": 6,
+      "d2": 5,
+      "total": 11,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 61,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 61,
+      "bankroll": 1045.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 62,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 62,
+      "d1": 4,
+      "d2": 5,
+      "total": 9,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 62,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 63,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 9
+    },
+    {
+      "type": "roll",
+      "roll": 63,
+      "d1": 3,
+      "d2": 4,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 63,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 63,
+      "kind": "pass_odds",
+      "number": 9,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 63,
+      "bankroll": 985.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 64,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 64,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 64,
+      "bankroll": 975.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 65,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 65,
+      "d1": 6,
+      "d2": 6,
+      "total": 12,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 65,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 66,
+      "d1": 3,
+      "d2": 1,
+      "total": 4,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 66,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 67,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 67,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 68,
+      "d1": 1,
+      "d2": 4,
+      "total": 5,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 68,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 69,
+      "d1": 5,
+      "d2": 6,
+      "total": 11,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 69,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 70,
+      "d1": 3,
+      "d2": 2,
+      "total": 5,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 70,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 71,
+      "d1": 2,
+      "d2": 1,
+      "total": 3,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 71,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 72,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 72,
+      "bankroll": 925.0
+    },
+    {
+      "type": "roll",
+      "roll": 73,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 73,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 73,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 73,
+      "bankroll": 925.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 74,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 74,
+      "d1": 2,
+      "d2": 3,
+      "total": 5,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 74,
+      "bankroll": 915.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 75,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 5
+    },
+    {
+      "type": "roll",
+      "roll": 75,
+      "d1": 2,
+      "d2": 3,
+      "total": 5,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 75,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 75,
+      "kind": "pass_odds",
+      "number": 5,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 75,
+      "bankroll": 1010.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 76,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 76,
+      "d1": 4,
+      "d2": 1,
+      "total": 5,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 76,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 77,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 5
+    },
+    {
+      "type": "roll",
+      "roll": 77,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 77,
+      "bankroll": 950.0
+    },
+    {
+      "type": "roll",
+      "roll": 78,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 78,
+      "bankroll": 950.0
+    },
+    {
+      "type": "roll",
+      "roll": 79,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 79,
+      "bankroll": 950.0
+    },
+    {
+      "type": "roll",
+      "roll": 80,
+      "d1": 6,
+      "d2": 5,
+      "total": 11,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 80,
+      "bankroll": 950.0
+    },
+    {
+      "type": "roll",
+      "roll": 81,
+      "d1": 5,
+      "d2": 6,
+      "total": 11,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 81,
+      "bankroll": 950.0
+    },
+    {
+      "type": "roll",
+      "roll": 82,
+      "d1": 1,
+      "d2": 1,
+      "total": 2,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 82,
+      "bankroll": 950.0
+    },
+    {
+      "type": "roll",
+      "roll": 83,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 83,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 83,
+      "kind": "pass_odds",
+      "number": 5,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 83,
+      "bankroll": 950.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 84,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 84,
+      "d1": 2,
+      "d2": 5,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 84,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 84,
+      "bankroll": 960.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 85,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 85,
+      "d1": 5,
+      "d2": 1,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 85,
+      "bankroll": 950.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 86,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 86,
+      "d1": 4,
+      "d2": 1,
+      "total": 5,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 86,
+      "bankroll": 900.0
+    },
+    {
+      "type": "roll",
+      "roll": 87,
+      "d1": 3,
+      "d2": 1,
+      "total": 4,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 87,
+      "bankroll": 900.0
+    },
+    {
+      "type": "roll",
+      "roll": 88,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 88,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 88,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 88,
+      "bankroll": 1030.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 89,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 89,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 89,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 89,
+      "bankroll": 1020.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 90,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 90,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 90,
+      "bankroll": 1010.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 91,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 91,
+      "d1": 1,
+      "d2": 4,
+      "total": 5,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 91,
+      "bankroll": 960.0
+    },
+    {
+      "type": "roll",
+      "roll": 92,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 92,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 92,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 92,
+      "bankroll": 1090.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 93,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 93,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 93,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 93,
+      "bankroll": 1100.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 94,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 94,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 94,
+      "bankroll": 1090.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 95,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 95,
+      "d1": 4,
+      "d2": 5,
+      "total": 9,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 95,
+      "bankroll": 1040.0
+    },
+    {
+      "type": "roll",
+      "roll": 96,
+      "d1": 1,
+      "d2": 3,
+      "total": 4,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 96,
+      "bankroll": 1040.0
+    },
+    {
+      "type": "roll",
+      "roll": 97,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 97,
+      "bankroll": 1040.0
+    },
+    {
+      "type": "roll",
+      "roll": 98,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 98,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 98,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 98,
+      "bankroll": 1040.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 99,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 99,
+      "d1": 3,
+      "d2": 3,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 99,
+      "bankroll": 1030.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 100,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 100,
+      "d1": 4,
+      "d2": 2,
+      "total": 6,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 100,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 100,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 100,
+      "bankroll": 1110.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 101,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 101,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 101,
+      "bankroll": 1100.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 102,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 102,
+      "d1": 4,
+      "d2": 1,
+      "total": 5,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 102,
+      "bankroll": 1050.0
+    },
+    {
+      "type": "roll",
+      "roll": 103,
+      "d1": 5,
+      "d2": 1,
+      "total": 6,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 103,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 103,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 103,
+      "bankroll": 1180.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 104,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 104,
+      "d1": 6,
+      "d2": 4,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 104,
+      "bankroll": 1170.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 105,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 105,
+      "d1": 2,
+      "d2": 3,
+      "total": 5,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 105,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "roll",
+      "roll": 106,
+      "d1": 3,
+      "d2": 6,
+      "total": 9,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 106,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "roll",
+      "roll": 107,
+      "d1": 4,
+      "d2": 5,
+      "total": 9,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 107,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "roll",
+      "roll": 108,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 108,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "roll",
+      "roll": 109,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 109,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "roll",
+      "roll": 110,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 110,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 110,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 110,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 111,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 111,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 111,
+      "bankroll": 1110.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 112,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 4
+    },
+    {
+      "type": "roll",
+      "roll": 112,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 112,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "roll",
+      "roll": 113,
+      "d1": 3,
+      "d2": 1,
+      "total": 4,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 113,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 113,
+      "kind": "pass_odds",
+      "number": 4,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 100.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 113,
+      "bankroll": 1230.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 114,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 114,
+      "d1": 5,
+      "d2": 4,
+      "total": 9,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 114,
+      "bankroll": 1220.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 115,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 9
+    },
+    {
+      "type": "roll",
+      "roll": 115,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 115,
+      "bankroll": 1170.0
+    },
+    {
+      "type": "roll",
+      "roll": 116,
+      "d1": 1,
+      "d2": 4,
+      "total": 5,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 116,
+      "bankroll": 1170.0
+    },
+    {
+      "type": "roll",
+      "roll": 117,
+      "d1": 6,
+      "d2": 4,
+      "total": 10,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 117,
+      "bankroll": 1170.0
+    },
+    {
+      "type": "roll",
+      "roll": 118,
+      "d1": 5,
+      "d2": 5,
+      "total": 10,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 118,
+      "bankroll": 1170.0
+    },
+    {
+      "type": "roll",
+      "roll": 119,
+      "d1": 3,
+      "d2": 6,
+      "total": 9,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 119,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 119,
+      "kind": "pass_odds",
+      "number": 9,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 119,
+      "bankroll": 1315.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 120,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 120,
+      "d1": 3,
+      "d2": 4,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 120,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 120,
+      "bankroll": 1325.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 121,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 121,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 121,
+      "bankroll": 1315.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 122,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 9
+    },
+    {
+      "type": "roll",
+      "roll": 122,
+      "d1": 2,
+      "d2": 5,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 122,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 122,
+      "kind": "pass_odds",
+      "number": 9,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 122,
+      "bankroll": 1265.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 123,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 123,
+      "d1": 6,
+      "d2": 1,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 123,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 123,
+      "bankroll": 1275.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 124,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 124,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 124,
+      "bankroll": 1265.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 125,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 125,
+      "d1": 1,
+      "d2": 3,
+      "total": 4,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 125,
+      "bankroll": 1215.0
+    },
+    {
+      "type": "roll",
+      "roll": 126,
+      "d1": 6,
+      "d2": 1,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 126,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 126,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 126,
+      "bankroll": 1215.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 127,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 127,
+      "d1": 5,
+      "d2": 3,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 127,
+      "bankroll": 1205.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 128,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 128,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 128,
+      "bankroll": 1155.0
+    },
+    {
+      "type": "roll",
+      "roll": 129,
+      "d1": 4,
+      "d2": 3,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 129,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 129,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 129,
+      "bankroll": 1155.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 130,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 130,
+      "d1": 5,
+      "d2": 3,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 130,
+      "bankroll": 1145.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 131,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 131,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 131,
+      "bankroll": 1095.0
+    },
+    {
+      "type": "roll",
+      "roll": 132,
+      "d1": 5,
+      "d2": 6,
+      "total": 11,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 132,
+      "bankroll": 1095.0
+    },
+    {
+      "type": "roll",
+      "roll": 133,
+      "d1": 5,
+      "d2": 2,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 133,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 133,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 133,
+      "bankroll": 1095.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 134,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 134,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 134,
+      "bankroll": 1085.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 135,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 9
+    },
+    {
+      "type": "roll",
+      "roll": 135,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 135,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 136,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 136,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 137,
+      "d1": 1,
+      "d2": 1,
+      "total": 2,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 137,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 138,
+      "d1": 5,
+      "d2": 2,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 138,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 138,
+      "kind": "pass_odds",
+      "number": 9,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 138,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 139,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 139,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 139,
+      "bankroll": 1025.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 140,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 9
+    },
+    {
+      "type": "roll",
+      "roll": 140,
+      "d1": 2,
+      "d2": 2,
+      "total": 4,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 140,
+      "bankroll": 975.0
+    },
+    {
+      "type": "roll",
+      "roll": 141,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 141,
+      "bankroll": 975.0
+    },
+    {
+      "type": "roll",
+      "roll": 142,
+      "d1": 4,
+      "d2": 4,
+      "total": 8,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 142,
+      "bankroll": 975.0
+    },
+    {
+      "type": "roll",
+      "roll": 143,
+      "d1": 6,
+      "d2": 6,
+      "total": 12,
+      "phase": "point",
+      "point": 9
+    },
+    {
+      "type": "bankroll",
+      "roll": 143,
+      "bankroll": 975.0
+    },
+    {
+      "type": "roll",
+      "roll": 144,
+      "d1": 5,
+      "d2": 4,
+      "total": 9,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 144,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 144,
+      "kind": "pass_odds",
+      "number": 9,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 144,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 145,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 145,
+      "d1": 1,
+      "d2": 4,
+      "total": 5,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 145,
+      "bankroll": 1110.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 146,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 5
+    },
+    {
+      "type": "roll",
+      "roll": 146,
+      "d1": 6,
+      "d2": 5,
+      "total": 11,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 146,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "roll",
+      "roll": 147,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 147,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "roll",
+      "roll": 148,
+      "d1": 6,
+      "d2": 1,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 148,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 148,
+      "kind": "pass_odds",
+      "number": 5,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 148,
+      "bankroll": 1060.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 149,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 149,
+      "d1": 2,
+      "d2": 4,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 149,
+      "bankroll": 1050.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 150,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 150,
+      "d1": 1,
+      "d2": 3,
+      "total": 4,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 150,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "roll",
+      "roll": 151,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 151,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "roll",
+      "roll": 152,
+      "d1": 4,
+      "d2": 5,
+      "total": 9,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 152,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "roll",
+      "roll": 153,
+      "d1": 4,
+      "d2": 5,
+      "total": 9,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 153,
+      "bankroll": 1000.0
+    },
+    {
+      "type": "roll",
+      "roll": 154,
+      "d1": 5,
+      "d2": 1,
+      "total": 6,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 154,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 154,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 154,
+      "bankroll": 1130.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 155,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 155,
+      "d1": 1,
+      "d2": 4,
+      "total": 5,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 155,
+      "bankroll": 1120.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 156,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 5
+    },
+    {
+      "type": "roll",
+      "roll": 156,
+      "d1": 3,
+      "d2": 3,
+      "total": 6,
+      "phase": "point",
+      "point": 5
+    },
+    {
+      "type": "bankroll",
+      "roll": 156,
+      "bankroll": 1070.0
+    },
+    {
+      "type": "roll",
+      "roll": 157,
+      "d1": 4,
+      "d2": 1,
+      "total": 5,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 157,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 157,
+      "kind": "pass_odds",
+      "number": 5,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 75.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 157,
+      "bankroll": 1215.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 158,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 158,
+      "d1": 4,
+      "d2": 2,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 158,
+      "bankroll": 1205.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 159,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 159,
+      "d1": 5,
+      "d2": 6,
+      "total": 11,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 159,
+      "bankroll": 1155.0
+    },
+    {
+      "type": "roll",
+      "roll": 160,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 160,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 160,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 160,
+      "bankroll": 1155.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 161,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 161,
+      "d1": 2,
+      "d2": 1,
+      "total": 3,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 161,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 161,
+      "bankroll": 1145.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 162,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 162,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 162,
+      "bankroll": 1135.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 163,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 163,
+      "d1": 4,
+      "d2": 3,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 163,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 163,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "lost",
+      "profit": -50.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 163,
+      "bankroll": 1085.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 164,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 164,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 164,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 164,
+      "bankroll": 1075.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 165,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 165,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 165,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 165,
+      "bankroll": 1085.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 166,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 166,
+      "d1": 1,
+      "d2": 6,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 166,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 166,
+      "bankroll": 1095.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 167,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 167,
+      "d1": 5,
+      "d2": 5,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 167,
+      "bankroll": 1085.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 168,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 168,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 168,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 169,
+      "d1": 1,
+      "d2": 5,
+      "total": 6,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 169,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 170,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 170,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 171,
+      "d1": 3,
+      "d2": 3,
+      "total": 6,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 171,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 172,
+      "d1": 6,
+      "d2": 2,
+      "total": 8,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 172,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 173,
+      "d1": 1,
+      "d2": 4,
+      "total": 5,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 173,
+      "bankroll": 1035.0
+    },
+    {
+      "type": "roll",
+      "roll": 174,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 174,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 174,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 100.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 174,
+      "bankroll": 1205.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 175,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 175,
+      "d1": 1,
+      "d2": 1,
+      "total": 2,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 175,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 175,
+      "bankroll": 1195.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 176,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 176,
+      "d1": 3,
+      "d2": 4,
+      "total": 7,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 176,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 176,
+      "bankroll": 1205.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 177,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 177,
+      "d1": 1,
+      "d2": 3,
+      "total": 4,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 177,
+      "bankroll": 1195.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 178,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 4
+    },
+    {
+      "type": "roll",
+      "roll": 178,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 178,
+      "bankroll": 1145.0
+    },
+    {
+      "type": "roll",
+      "roll": 179,
+      "d1": 5,
+      "d2": 6,
+      "total": 11,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 179,
+      "bankroll": 1145.0
+    },
+    {
+      "type": "roll",
+      "roll": 180,
+      "d1": 6,
+      "d2": 3,
+      "total": 9,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 180,
+      "bankroll": 1145.0
+    },
+    {
+      "type": "roll",
+      "roll": 181,
+      "d1": 1,
+      "d2": 2,
+      "total": 3,
+      "phase": "point",
+      "point": 4
+    },
+    {
+      "type": "bankroll",
+      "roll": 181,
+      "bankroll": 1145.0
+    },
+    {
+      "type": "roll",
+      "roll": 182,
+      "d1": 3,
+      "d2": 1,
+      "total": 4,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 182,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 182,
+      "kind": "pass_odds",
+      "number": 4,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 100.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 182,
+      "bankroll": 1315.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 183,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 183,
+      "d1": 1,
+      "d2": 1,
+      "total": 2,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 183,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 183,
+      "bankroll": 1305.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 184,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 184,
+      "d1": 2,
+      "d2": 6,
+      "total": 8,
+      "phase": "point",
+      "point": 8
+    },
+    {
+      "type": "bankroll",
+      "roll": 184,
+      "bankroll": 1295.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 185,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 8
+    },
+    {
+      "type": "roll",
+      "roll": 185,
+      "d1": 3,
+      "d2": 5,
+      "total": 8,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 185,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 185,
+      "kind": "pass_odds",
+      "number": 8,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 185,
+      "bankroll": 1375.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 186,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 186,
+      "d1": 3,
+      "d2": 3,
+      "total": 6,
+      "phase": "point",
+      "point": 6
+    },
+    {
+      "type": "bankroll",
+      "roll": 186,
+      "bankroll": 1365.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 187,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 6
+    },
+    {
+      "type": "roll",
+      "roll": 187,
+      "d1": 5,
+      "d2": 1,
+      "total": 6,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 187,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 187,
+      "kind": "pass_odds",
+      "number": 6,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 60.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 187,
+      "bankroll": 1445.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 188,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 188,
+      "d1": 6,
+      "d2": 6,
+      "total": 12,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 188,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "lost",
+      "profit": -10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 188,
+      "bankroll": 1435.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 189,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 189,
+      "d1": 5,
+      "d2": 6,
+      "total": 11,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 189,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 189,
+      "bankroll": 1445.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 190,
+      "kind": "pass",
+      "amount": 10.0,
+      "number": null
+    },
+    {
+      "type": "roll",
+      "roll": 190,
+      "d1": 4,
+      "d2": 6,
+      "total": 10,
+      "phase": "point",
+      "point": 10
+    },
+    {
+      "type": "bankroll",
+      "roll": 190,
+      "bankroll": 1435.0
+    },
+    {
+      "type": "bet_placed",
+      "roll": 191,
+      "kind": "pass_odds",
+      "amount": 50.0,
+      "number": 10
+    },
+    {
+      "type": "roll",
+      "roll": 191,
+      "d1": 6,
+      "d2": 4,
+      "total": 10,
+      "phase": "comeout",
+      "point": null
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 191,
+      "kind": "pass",
+      "number": null,
+      "amount": 10.0,
+      "outcome": "won",
+      "profit": 10.0
+    },
+    {
+      "type": "bet_resolved",
+      "roll": 191,
+      "kind": "pass_odds",
+      "number": 10,
+      "amount": 50.0,
+      "outcome": "won",
+      "profit": 100.0
+    },
+    {
+      "type": "bankroll",
+      "roll": 191,
+      "bankroll": 1555.0
+    },
+    {
+      "type": "session_end",
+      "reason": "stop_win",
+      "rolls_played": 191,
+      "final_bankroll": 1555.0,
+      "net_profit": 555.0,
+      "total_wagered": 2690.0,
+      "max_drawdown": 410.0
+    }
+  ]
+}
