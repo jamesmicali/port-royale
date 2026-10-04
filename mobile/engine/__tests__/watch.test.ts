@@ -7,7 +7,6 @@
  */
 import {
   SessionEndEvent,
-  WatchEvent,
   WATCH_EVENT_TYPES,
 } from "../events";
 import {
@@ -146,7 +145,7 @@ test("per-roll ordering: placed, takedowns, roll, settlements, bankroll", () => 
     arr.push(e.type);
     byRoll.set(roll, arr);
   }
-  for (const [roll, types] of byRoll) {
+  for (const [, types] of byRoll) {
     const rollIdx = types.indexOf("roll");
     expect(rollIdx).toBeGreaterThanOrEqual(0);
     // exactly one roll event and one bankroll event, bankroll last
@@ -223,7 +222,7 @@ test("bankroll reconciles with resolved profits and live stakes", () => {
 /* ------------------------------------------------------- stop control */
 
 test("stop_loss triggers on a bleeding dice stream", () => {
-  const dice: Array<[number, number]> = Array(300).fill([1, 1]); // craps every come-out
+  const dice: [number, number][] = Array(300).fill([1, 1]); // craps every come-out
   const events = [
     ...watchSession({
       strategy: "passline_odds",
@@ -242,7 +241,7 @@ test("stop_loss triggers on a bleeding dice stream", () => {
 });
 
 test("stop_win triggers on a winning dice stream", () => {
-  const dice: Array<[number, number]> = Array(300).fill([3, 4]); // natural every come-out
+  const dice: [number, number][] = Array(300).fill([3, 4]); // natural every come-out
   const events = [
     ...watchSession({
       strategy: "passline_odds",
@@ -259,7 +258,7 @@ test("stop_win triggers on a winning dice stream", () => {
 });
 
 test("ruin ends the session when the bankroll can't cover the minimum", () => {
-  const dice: Array<[number, number]> = Array(300).fill([1, 1]);
+  const dice: [number, number][] = Array(300).fill([1, 1]);
   const events = [
     ...watchSession({
       strategy: "passline_odds",

@@ -68,9 +68,9 @@ export function sessionSeed(
 }
 
 /** Generate `n` dice pairs from `seed`. Shared by sim and compare. */
-export function makeDiceStream(seed: number, n: number): Array<[number, number]> {
+export function makeDiceStream(seed: number, n: number): [number, number][] {
   const rng = new SeededRng(seed);
-  const out: Array<[number, number]> = [];
+  const out: [number, number][] = [];
   for (let i = 0; i < n; i++) out.push([rng.die(), rng.die()]);
   return out;
 }
@@ -91,7 +91,7 @@ export interface WatchOptions {
   seed?: number | null;
   stopLoss?: number | null; // end session at <= this fraction of start
   stopWin?: number | null; // end session at >= this fraction of start
-  dice?: Array<[number, number]> | null;
+  dice?: [number, number][] | null;
 }
 
 function betPlacedEvent(rollNo: number, bet: Bet): BetPlacedEvent {
@@ -141,7 +141,7 @@ function makeTable(
 export function* watchSession(
   opts: WatchOptions = {},
   sessionIndex = 0,
-  dice: Array<[number, number]> | null = null
+  dice: [number, number][] | null = null
 ): Generator<WatchEvent> {
   const game = opts.game ?? "craps";
   const strategyName = opts.strategy ?? "passline_odds";
@@ -300,7 +300,7 @@ export interface SessionResult {
 export function runSession(
   cfg: Required<SimConfig>,
   sessionIndex: number,
-  dice: Array<[number, number]> | null = null
+  dice: [number, number][] | null = null
 ): SessionResult {
   const seed = sessionSeed(cfg.seed, sessionIndex);
   const start = cfg.bankroll;
@@ -461,7 +461,7 @@ function aggregate(
     ["p50", 50],
     ["p75", 75],
     ["p95", 95],
-  ] as Array<[string, number]>) {
+  ] as [string, number][]) {
     const series: number[] = [];
     const points = results[0]?.history.length ?? 0;
     for (let i = 0; i < points; i++) {

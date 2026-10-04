@@ -24,7 +24,6 @@
 
 import {
   Bet,
-  BetEvent,
   RoundResult,
   Table,
   TableLimitError,
