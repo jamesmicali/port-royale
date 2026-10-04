@@ -112,3 +112,53 @@ and strategies can be watched playing themselves out bet by bet.
   Python+numpy for tight loops. The TS sim should target ~100 sessions × a few
   thousand rolls interactively; larger runs can be chunked across frames or
   moved to a background task. Validate with benchmarks during the port.
+
+## Phase 1 — Expo scaffold + TypeScript engine port (done 2026-09-23)
+
+Branch: `mobile/expo-scaffold` (PR against `main`).
+
+**Scaffolded** (`mobile/`, via `create-expo-app`, TypeScript template):
+- App name "Port Royale" (`app.json`), strict TypeScript (`strict: true`).
+- Jest (`ts-jest`, node environment) + `npm test` / `npm run typecheck`
+  scripts. 43 tests, all green; `tsc --noEmit` clean.
+
+**Ported** (`mobile/engine/`, UI-free — no React imports anywhere):
+- `prng.ts` — mulberry32 seeded PRNG (`SeededRng`).
+- `table.ts` — `Table` base: `Bet`/`BetEvent`, bankroll charge/settle
+  accounting, `drainEvents`, table errors.
+- `craps.ts` — full craps engine: every payout table (true-odds odds,
+  place, buy/lay with 5% commission, field, hardways, props), bar-12,
+  come-bet travel, hardways off on come-out, table limits, odds caps.
+- `strategy.ts` / `strategies.ts` — `Strategy` base with `PARAMS`
+  casting + `decide(table)`; bundled `passline_odds`, `dontpass_odds`,
+  `ironcross`; `makeStrategy` registry.
+- `events.ts` — the six watch-mode event types as TS types, field-for-field
+  identical to `docs/watch-mode.md`.
+- `sim.ts` — `watchSession` (per-roll event generator, same ordering as
+  Python), `runSession`, `runSimulation` (sync aggregation with
+  numpy-style linear-interpolation percentiles), `runComparison` (common
+  random numbers, seed required).
+
+**Placeholder UI** (`mobile/App.tsx`): runs one seeded session
+(`passline_odds`, seed 42, 300 rolls) and shows final bankroll / net
+profit / rolls / end reason — a smoke test, not the animated table.
+
+**Seed compatibility (important):** the TS engine uses mulberry32, not
+Python's Mersenne Twister. Seeds are **not** cross-compatible: `seed=42`
+in TypeScript deals different dice than `seed=42` in Python. The contract
+is per-platform determinism (same seed → byte-identical event stream on
+the same platform) plus an identical *event schema*. Cross-platform
+checks must compare statistics and schemas, never raw dice sequences.
+This is documented in `mobile/engine/prng.ts`.
+
+**What's next (Phase 2+):**
+- Shared test vectors: fixed-dice sessions asserting identical *event
+  streams* between Python and TS (schema + semantics, not dice values).
+- `PressAfterWins` port (stateful strategy via `drainEvents`).
+- Benchmark the TS sim on Hermes; chunk large runs across frames.
+- Watch-mode player UI: render the event stream as a play-by-play list.
+- Strategy lab screens (sim config + charts from `bands`).
+- In-app JS strategy editor against the `decide(table)` API.
+- Animated craps table (Reanimated + Skia + Gesture Handler) driven by
+  the same event stream.
+- EAS build profiles + store metadata.
