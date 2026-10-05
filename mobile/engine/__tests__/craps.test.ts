@@ -19,7 +19,9 @@ import {
 } from "../table";
 
 function table(bankroll = 1000): CrapsTable {
-  return new CrapsTable({ bankroll });
+  const t = new CrapsTable({ bankroll });
+  t.drainEvents(); // opt in: strategy-visible events buffer only after this
+  return t;
 }
 
 test("pass line wins 1:1 on a come-out natural", () => {

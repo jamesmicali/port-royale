@@ -214,7 +214,7 @@ export function* watchSession(
     for (const bet of table.bets) {
       if (!known.has(bet)) yield betPlacedEvent(r, bet);
     }
-    for (const event of table.drainEvents()) {
+    for (const event of table.drainStreamEvents()) {
       // take-downs / adjustments during decide()
       yield betResolvedEvent(r, event);
     }
@@ -239,7 +239,7 @@ export function* watchSession(
       point: table.point, // point *after* the roll resolved
     };
     yield rollEvent;
-    for (const event of table.drainEvents()) {
+    for (const event of table.drainStreamEvents()) {
       yield betResolvedEvent(r, event);
     }
 

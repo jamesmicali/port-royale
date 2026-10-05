@@ -245,6 +245,7 @@ def test_come_bet_travels_then_wins():
 
 def test_come_bet_wins_on_seven_while_in_transit():
     t = make_table()
+    t.drain_events()  # opt in: strategy-visible events buffer only after this
     t.place_bet("pass", 10)
     t.roll(2, 4)  # point 6
     t.place_bet("come", 10)

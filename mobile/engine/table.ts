@@ -109,8 +109,18 @@ export abstract class Table {
   seed: number | null;
 
   protected rng: SeededRng;
-  /** Resolved-bet event queue (drained by the engine / strategies). */
+  /**
+   * Two consumers read resolved-bet events, and neither may starve the
+   * other: strategies observe via `drainEvents()` (their memory channel),
+   * while the engine builds the watch-event stream via
+   * `drainStreamEvents()`. Every recorded event lands in the stream queue;
+   * it lands in the strategy queue only once a strategy has opted in by
+   * calling `drainEvents()` (so stateless strategies in huge Monte Carlo
+   * runs pay no buffering cost).
+   */
   protected pending: BetEvent[] = [];
+  protected streamPending: BetEvent[] = [];
+  private observing = false;
 
   constructor(opts: TableOptions = {}) {
     const bankroll = opts.bankroll ?? 1000.0;
@@ -137,16 +147,36 @@ export abstract class Table {
     return this.findBet(kind, number) !== undefined;
   }
 
-  /** Return and clear the resolved-bet events since the last call. */
+  /**
+   * Return and clear the resolved-bet events since the last call.
+   *
+   * This is the strategy-memory channel: the engine never consumes this
+   * queue (it reads its own via `drainStreamEvents`), so a strategy that
+   * drains here — typically at the top of `decide` — sees every resolution
+   * since its previous call. The first call opts the table into buffering
+   * strategy-visible events; tables whose strategies never call this pay
+   * no extra memory.
+   */
   drainEvents(): BetEvent[] {
+    this.observing = true;
     const events = this.pending;
     this.pending = [];
     return events;
   }
 
+  /** Engine-internal: resolved-bet events for the watch-event stream. */
+  drainStreamEvents(): BetEvent[] {
+    const events = this.streamPending;
+    this.streamPending = [];
+    return events;
+  }
+
   /** Append a resolved-bet event without moving money (e.g. come-bet travel). */
   protected recordEvent(event: BetEvent): BetEvent {
-    this.pending.push(event);
+    this.streamPending.push(event);
+    if (this.observing) {
+      this.pending.push(event);
+    }
     return event;
   }
 

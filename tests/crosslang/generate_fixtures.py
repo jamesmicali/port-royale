@@ -62,6 +62,17 @@ SCENARIOS = [
         "dice_seed": 7,  # same dice: field + place 5/6/8 coverage
     },
     {
+        "name": "presser",
+        "strategy": "presser",
+        "params": {},
+        "bankroll": 1000.0,
+        "rolls": 300,
+        "seed": 7,
+        "stop_loss": None,
+        "stop_win": None,
+        "dice_seed": 7,  # same dice: exercises the streak/press state machine
+    },
+    {
         "name": "stop_loss",
         "strategy": "passline_odds",
         "params": {},

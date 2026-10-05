@@ -152,9 +152,21 @@ checks must compare statistics and schemas, never raw dice sequences.
 This is documented in `mobile/engine/prng.ts`.
 
 **What's next (Phase 2+):**
-- Shared test vectors: fixed-dice sessions asserting identical *event
-  streams* between Python and TS (schema + semantics, not dice values).
-- `PressAfterWins` port (stateful strategy via `drainEvents`).
+- ~~Shared test vectors: fixed-dice sessions asserting identical *event
+  streams* between Python and TS (schema + semantics, not dice values).~~
+  Done 2026-10-04 (tests/crosslang, 6 vectors).
+- ~~`PressAfterWins` port (stateful strategy via `drainEvents`).~~
+  Done 2026-10-05 (`mobile/engine/strategies.ts` + crosslang vector
+  `presser.json`). The port caught a real engine bug on *both* sides: the
+  engine drained the event queue for the watch stream before the strategy's
+  next `decide()`, so `drain_events()` inside a strategy always saw an empty
+  queue and the presser never pressed — it was silently a flat pass-line
+  strategy. Fixed by splitting the queues: `drain_events()` is now the
+  strategy-memory channel (buffered only after a strategy opts in by calling
+  it, so stateless Monte Carlo runs pay no extra memory) and
+  `drain_stream_events()` feeds the watch stream. The strategy-facing table
+  API is unchanged; the event schema and stream ordering are unchanged;
+  `presser.json` now pins pressed ($20) bets event-for-event.
 - Benchmark the TS sim on Hermes; chunk large runs across frames.
 - Watch-mode player UI: render the event stream as a play-by-play list.
 - Strategy lab screens (sim config + charts from `bands`).

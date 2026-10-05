@@ -91,7 +91,16 @@ class Table(ABC):
         self.starting_bankroll: float = float(bankroll)
         self.bets: list[Bet] = []
         self.total_wagered: float = 0.0
+        # Two consumers read resolved-bet events, and neither may starve the
+        # other: strategies observe via ``drain_events()`` (their memory
+        # channel), while the engine builds the watch-event stream via
+        # ``drain_stream_events()``. Every recorded event lands in the stream
+        # queue; it lands in the strategy queue only once a strategy has
+        # opted in by calling ``drain_events()`` (so stateless strategies in
+        # huge Monte Carlo runs pay no buffering cost).
         self._events: list[BetEvent] = []
+        self._stream: list[BetEvent] = []
+        self._observing: bool = False
         self.seed: Optional[int] = seed
         if seed is not None:
             self.rng: Any = random.Random(seed)
@@ -117,10 +126,36 @@ class Table(ABC):
         return self.find_bet(kind, number) is not None
 
     def drain_events(self) -> list[BetEvent]:
-        """Return and clear the resolved-bet events since the last call."""
+        """Return and clear the resolved-bet events since the last call.
+
+        This is the strategy-memory channel: the engine never consumes this
+        queue (it reads its own via :meth:`drain_stream_events`), so a
+        strategy that drains here — typically at the top of ``decide`` —
+        sees every resolution since its previous call. The first call opts
+        the table into buffering strategy-visible events; tables whose
+        strategies never call this pay no extra memory.
+        """
+        self._observing = True
         events = self._events
         self._events = []
         return events
+
+    def drain_stream_events(self) -> list[BetEvent]:
+        """Return and clear the resolved-bet events for the watch stream.
+
+        Engine-internal: the Monte Carlo loop drains this (never
+        :meth:`drain_events`) so strategies keep their own view.
+        """
+        events = self._stream
+        self._stream = []
+        return events
+
+    def _record_event(self, event: BetEvent) -> BetEvent:
+        """File a resolved-bet event with both consumers (see ``__init__``)."""
+        self._stream.append(event)
+        if self._observing:
+            self._events.append(event)
+        return event
 
     def _charge(self, amount: float) -> None:
         if amount > self.bankroll + 1e-9:
@@ -145,7 +180,7 @@ class Table(ABC):
         else:  # lost
             profit = -bet.amount
         event = BetEvent(bet.kind, bet.number, bet.amount, outcome, profit)
-        self._events.append(event)
+        self._record_event(event)
         return event
 
     @abstractmethod

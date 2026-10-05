@@ -138,6 +138,80 @@ export class IronCross extends Strategy {
   }
 }
 
+/**
+ * The presser: flat pass line with odds, but after two *consecutive*
+ * winning pass-line bets the base unit doubles (a press); any loss resets
+ * it. Stateful — memory via `table.drainEvents()` and `onSessionStart`.
+ * Port of `PressAfterWins` in `strategies/craps.py`.
+ */
+export class PressAfterWins extends Strategy {
+  readonly name = "presser";
+  description = "Pass line + odds; double the unit after two straight wins.";
+
+  static PARAMS: Record<string, ParamSpec> = {
+    base_unit: {
+      type: "float",
+      default: 10.0,
+      label: "Base unit ($)",
+      help: "Starting pass line bet.",
+    },
+    odds_multiple: {
+      type: "int",
+      default: 3,
+      label: "Odds multiple",
+      help: "Odds behind the pass line.",
+    },
+    press_after: {
+      type: "int",
+      default: 2,
+      label: "Press after N wins",
+      help: "Consecutive pass-line wins before doubling the unit.",
+    },
+  };
+
+  declare base_unit: number;
+  declare odds_multiple: number;
+  declare press_after: number;
+
+  private unit = 10.0;
+  private streak = 0;
+
+  onSessionStart(_table: CrapsTable): void {
+    this.unit = this.base_unit;
+    this.streak = 0;
+  }
+
+  decide(table: CrapsTable): void {
+    // Memory: what happened to our pass line bets since last roll?
+    for (const event of table.drainEvents()) {
+      if (event.kind === "pass") {
+        if (event.outcome === "won") {
+          this.streak += 1;
+          if (this.streak >= this.press_after) {
+            this.unit = this.base_unit * 2; // press!
+          }
+        } else if (event.outcome === "lost") {
+          this.streak = 0;
+          this.unit = this.base_unit; // reset
+        }
+      }
+    }
+
+    if (table.phase === "comeout") {
+      if (!table.hasBet("pass") && table.bankroll >= this.unit) {
+        table.placeBet("pass", this.unit);
+      }
+    } else {
+      if (table.hasBet("pass") && !table.hasOdds("pass")) {
+        const amount = Math.min(this.unit * this.odds_multiple, table.bankroll);
+        if (amount >= table.minBet) {
+          table.addOdds("pass", amount);
+        }
+      }
+    }
+  }
+}
+
 /* ------------------------------------------------------------------ */
 /* Registry                                                            */
 /* ------------------------------------------------------------------ */
@@ -148,6 +222,7 @@ export const STRATEGIES: Record<string, StrategyCtor> = {
   passline_odds: PassLineWithOdds,
   dontpass_odds: DontPassWithOdds,
   ironcross: IronCross,
+  presser: PressAfterWins,
 };
 
 export function makeStrategy(
