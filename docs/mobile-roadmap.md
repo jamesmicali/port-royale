@@ -51,9 +51,12 @@ with rolling dice and moving chips — fits this stack well:
   betting spots, win highlights, losing bets getting swept. Animations run on
   the UI thread at 60/120fps, independent of the JS thread — so a Monte Carlo
   sim can crunch in the background without dropping frames.
-- **React Native Skia** for custom canvas rendering: table felt, betting
-  layout, chip stacks, dice faces. Full draw control beats composing a craps
-  table from stock components.
+- **React Native Skia** (`react-native-skia`, the community fork by William
+  Candillon — Shopify archived `@shopify/react-native-skia` end of 2026)
+  for custom canvas rendering: table felt, betting layout, chip stacks,
+  dice faces. Full draw control beats composing a craps table from stock
+  components. Target v3 (Graphite GPU backend: Metal on iOS, Vulkan on
+  Android) when wiring it into the scaffold.
 - **Gesture Handler** for touch: drag chips onto the layout, tap to
   place/remove bets.
 - Dice animation: choreographed tumbling (springs/keyframes) tends to look
@@ -159,6 +162,6 @@ This is documented in `mobile/engine/prng.ts`.
 - Watch-mode player UI: render the event stream as a play-by-play list.
 - Strategy lab screens (sim config + charts from `bands`).
 - In-app JS strategy editor against the `decide(table)` API.
-- Animated craps table (Reanimated + Skia + Gesture Handler) driven by
-  the same event stream.
+- Animated craps table (Reanimated + `react-native-skia` v3 + Gesture Handler)
+  driven by the same event stream.
 - EAS build profiles + store metadata.
