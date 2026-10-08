@@ -222,7 +222,7 @@ def _iter_session_events(
         for bet in table.bets:
             if id(bet) not in known_ids:
                 yield _bet_placed_event(r, bet)
-        for event in table.drain_events():  # take-downs / adjustments in decide()
+        for event in table.drain_stream_events():  # take-downs / adjustments in decide()
             yield _bet_resolved_event(r, event)
 
         if dice is not None:
@@ -239,7 +239,7 @@ def _iter_session_events(
             "phase": result.phase,   # phase *after* the roll resolved
             "point": result.point,   # point *after* the roll resolved
         }
-        for event in table.drain_events():
+        for event in table.drain_stream_events():
             yield _bet_resolved_event(r, event)
 
         rolls_played = r

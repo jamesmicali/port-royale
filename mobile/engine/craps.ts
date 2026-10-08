@@ -312,7 +312,7 @@ export class CrapsTable extends Table {
     this.rollCount += 1;
     this.shooterRolls += 1;
 
-    const eventsBefore = this.pending.length;
+    const eventsBefore = this.streamPending.length;
     for (const bet of [...this.bets]) {
       // copy: settling mutates the list
       this.resolveBet(bet, total, d1 === d2);
@@ -339,7 +339,7 @@ export class CrapsTable extends Table {
         `${d1}-${d2} = ${total} (${this.phase}` +
         (this.point ? `, point ${this.point}` : "") +
         `)`,
-      events: this.pending.slice(eventsBefore),
+      events: this.streamPending.slice(eventsBefore),
       d1,
       d2,
       total,

@@ -243,7 +243,7 @@ class CrapsTable(Table):
         self.roll_count += 1
         self.shooter_rolls += 1
 
-        events_before = len(self._events)
+        events_before = len(self._stream)
         for bet in list(self.bets):  # copy: settling mutates the list
             self._resolve_bet(bet, total, hard=(d1 == d2))
 
@@ -262,7 +262,7 @@ class CrapsTable(Table):
             description=f"{d1}-{d2} = {total} ({self.phase}"
             + (f", point {self.point}" if self.point else "")
             + ")",
-            events=self._events[events_before:],
+            events=self._stream[events_before:],
             d1=d1,
             d2=d2,
             total=total,
@@ -349,7 +349,7 @@ class CrapsTable(Table):
                     self._settle(bet, "lost")
                 else:
                     bet.number = total
-                    self._events.append(BetEvent(kind, total, bet.amount, "travel", 0.0))
+                    self._record_event(BetEvent(kind, total, bet.amount, "travel", 0.0))
             else:
                 if total == 7:
                     self._settle(bet, "lost")
@@ -367,7 +367,7 @@ class CrapsTable(Table):
                     self._settle(bet, "lost")
                 else:
                     bet.number = total
-                    self._events.append(BetEvent(kind, total, bet.amount, "travel", 0.0))
+                    self._record_event(BetEvent(kind, total, bet.amount, "travel", 0.0))
             else:
                 if total == 7:
                     self._settle(bet, "won", 1.0)
