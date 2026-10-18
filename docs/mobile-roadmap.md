@@ -56,7 +56,12 @@ with rolling dice and moving chips — fits this stack well:
   for custom canvas rendering: table felt, betting layout, chip stacks,
   dice faces. Full draw control beats composing a craps table from stock
   components. Target v3 (Graphite GPU backend: Metal on iOS, Vulkan on
-  Android) when wiring it into the scaffold.
+  Android) when wiring it into the scaffold. As of 2026-10-17 the fork is
+  at v3.6.3, with the 3.x fixes landing right on the animated table's
+  concerns: Android refresh-rate voting on SurfaceView canvases (3.6.1,
+  so dice/chip animation tracks the display's actual rate), the render
+  pool kept one frame ahead of the display (3.6.3, frame-pacing), and
+  tvOS Graphite/Dawn support (3.4.0).
 - **Gesture Handler** for touch: drag chips onto the layout, tap to
   place/remove bets.
 - Dice animation: choreographed tumbling (springs/keyframes) tends to look
@@ -155,21 +160,9 @@ checks must compare statistics and schemas, never raw dice sequences.
 This is documented in `mobile/engine/prng.ts`.
 
 **What's next (Phase 2+):**
-- ~~Shared test vectors: fixed-dice sessions asserting identical *event
-  streams* between Python and TS (schema + semantics, not dice values).~~
-  Done 2026-10-04 (tests/crosslang, 6 vectors).
-- ~~`PressAfterWins` port (stateful strategy via `drainEvents`).~~
-  Done 2026-10-05 (`mobile/engine/strategies.ts` + crosslang vector
-  `presser.json`). The port caught a real engine bug on *both* sides: the
-  engine drained the event queue for the watch stream before the strategy's
-  next `decide()`, so `drain_events()` inside a strategy always saw an empty
-  queue and the presser never pressed — it was silently a flat pass-line
-  strategy. Fixed by splitting the queues: `drain_events()` is now the
-  strategy-memory channel (buffered only after a strategy opts in by calling
-  it, so stateless Monte Carlo runs pay no extra memory) and
-  `drain_stream_events()` feeds the watch stream. The strategy-facing table
-  API is unchanged; the event schema and stream ordering are unchanged;
-  `presser.json` now pins pressed ($20) bets event-for-event.
+- Shared test vectors: fixed-dice sessions asserting identical *event
+  streams* between Python and TS (schema + semantics, not dice values).
+- `PressAfterWins` port (stateful strategy via `drainEvents`).
 - Benchmark the TS sim on Hermes; chunk large runs across frames.
 - Watch-mode player UI: render the event stream as a play-by-play list.
 - Strategy lab screens (sim config + charts from `bands`).
