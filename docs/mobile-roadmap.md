@@ -56,12 +56,16 @@ with rolling dice and moving chips — fits this stack well:
   for custom canvas rendering: table felt, betting layout, chip stacks,
   dice faces. Full draw control beats composing a craps table from stock
   components. Target v3 (Graphite GPU backend: Metal on iOS, Vulkan on
-  Android) when wiring it into the scaffold. As of 2026-10-17 the fork is
-  at v3.6.3, with the 3.x fixes landing right on the animated table's
-  concerns: Android refresh-rate voting on SurfaceView canvases (3.6.1,
-  so dice/chip animation tracks the display's actual rate), the render
-  pool kept one frame ahead of the display (3.6.3, frame-pacing), and
-  tvOS Graphite/Dawn support (3.4.0).
+  Android) when wiring it into the scaffold. As of 2026-10-23 the fork is
+  at v3.7.4, with the 3.7.x fixes landing right on the animated table's
+  concerns: Android canvases present off the main thread (3.7.4 — heavy
+  JS work can no longer stall frame presentation), iOS presents at the
+  display's full rate on ProMotion devices (3.7.1, the iOS counterpart
+  to Android's refresh-rate voting in 3.6.1), Android gets
+  triple-buffered FIFO swapchain images with Dawn robustness kept on
+  (3.7.0), and the engine itself moved to Skia m157 (3.7.0). The 3.6.x
+  frame-pacing notes still stand: the render pool stays one frame ahead
+  of the display (3.6.3) and tvOS Graphite/Dawn support (3.4.0).
 - **Gesture Handler** for touch: drag chips onto the layout, tap to
   place/remove bets.
 - Dice animation: choreographed tumbling (springs/keyframes) tends to look
