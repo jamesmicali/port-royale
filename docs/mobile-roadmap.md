@@ -56,9 +56,13 @@ with rolling dice and moving chips — fits this stack well:
   for custom canvas rendering: table felt, betting layout, chip stacks,
   dice faces. Full draw control beats composing a craps table from stock
   components. Target v3 (Graphite GPU backend: Metal on iOS, Vulkan on
-  Android) when wiring it into the scaffold. As of 2026-10-23 the fork is
-  at v3.7.4, with the 3.7.x fixes landing right on the animated table's
-  concerns: Android canvases present off the main thread (3.7.4 — heavy
+  Android) when wiring it into the scaffold. As of 2026-11-02 the fork is
+  at v3.9.0, which brings back the Canvas colorSpace prop and adds
+  asynchronous readbacks, keeps scene nodes a re-render leaves unchanged,
+  and holds GPU work while the app is in the background; v3.8.1
+  (2026-10-27) was bugfixes only. The 3.7.x fixes landing on the animated
+  table's concerns still stand: Android canvases present off the main
+  thread (3.7.4 — heavy
   JS work can no longer stall frame presentation), iOS presents at the
   display's full rate on ProMotion devices (3.7.1, the iOS counterpart
   to Android's refresh-rate voting in 3.6.1), Android gets
